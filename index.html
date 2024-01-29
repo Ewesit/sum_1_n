@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+
+<script type = "text/javascript">
+            
+function sum_1_n(n) {
+    sum = 0;
+
+    for (let i = 0; i < n; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+        sum = sum + i;
+        
+        
+    }
+    
+}
+return sum;
+    
+}
+
+ // Prompt the user for input
+const n = parseInt(prompt("Enter a positive integer (n):"));
+
+// Check if the input is a positive integer
+if (Number.isInteger(n) && n > 0) {
+    // Calculate the sum and display the result
+    const result = sum_1_n(n);
+    console.log(`Sum of numbers between 1 and ${n} divisible by 3 or 5:`, result);
+} else {
+    console.log("Invalid input. Please enter a positive integer.");
+}
+       
+
+</script> 
+
+
+</body>
+</html>
